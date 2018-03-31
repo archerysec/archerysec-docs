@@ -1,17 +1,20 @@
 ---
 title: 
-category: Road-Maps
+category: Road Map
 chapter: 5
 order: 1
 ---
 
+We are working hard to make the project more stable and problem solving. You can track our project road map [@Github Project](https://github.com/archerysec/archerysec/projects/1)
 
-The tool is in a development phase and below features will be implemented.
+ - Python package for Archery REST API.
+ - False Positive Dashboard.
+ - More reporting format.
+ - Integrate popular tool (Nmap, Nikto, skipfish, etc) plugins.
+ - Cloud Security Scanning Solution.
+ - OSINT Solution.
+ - API vulnerability scanning and management.
 
-* API Automated vulnerability scanning.
-* Perform Reconnaissance before scanning.
-* Concurrent Scans.
-* Vulnerability POC pictures.
-* Cloud Security scanning.
-* Dashboards
-* Easy to installing.
+
+
+
