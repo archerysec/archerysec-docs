@@ -10,7 +10,7 @@ The OWASP Zed Attack Proxy (ZAP) is one of the world’s most popular free secur
 
 ![ZAP Scanner](/images/screenshots/owaspzap.png)
 
-Arachery has in built plugin for OWASP Zed Attack Proxy (ZAP) Scanner and you can utilize to perform automated way scanning on your web applications.
+Archery has in built plugin for OWASP Zed Attack Proxy (ZAP) Scanner and you can utilize to perform automated way scanning on your web applications.
 
 ### ZAP Running in Daemon Mode
 
@@ -23,8 +23,11 @@ C:\Program Files\OWASP\Zed Attack Proxy
 
 # Linux
 
+/usr/share/zaproxy/
 
 # Mac OS
+
+/Applications/OWASP\ ZAP.app/Contents/Java/
 
 ```
 

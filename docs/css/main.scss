@@ -15,7 +15,7 @@ $content-color: #222;
 $content-background-color: #fff;
 
 $brand-colour: #111;
-$brand-colour-light: mix($brand-colour, $content-background-color, 100%);
+$brand-colour-light: mix($brand-colour, $content-background-color, 10%);
 
 $nav-header-background-color: $brand-colour;
 $nav-header-height: 75px;
