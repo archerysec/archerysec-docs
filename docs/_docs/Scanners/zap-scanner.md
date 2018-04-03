@@ -43,7 +43,7 @@ zap.bat -daemon -host 0.0.0.0 -port 8080 -config api.disablekey=true -config api
 zap.sh -daemon -host 0.0.0.0 -port 8080 -config api.disablekey=true -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true
 ```
 
-Archery uses ZAP Scanner API in order to trigger scans in ZAP scanner. ZAP API end points exposed in your localhost ``` 127.0.0.1 ``` or your system host IP if you ran as above daemon mode.
+Archery uses ZAP Scanner API in order to trigger scans in ZAP. If you run ZAP in daemon mode, the ZAP API end points are exposed on your localhost `127.0.0.1` or your system IP.
 
 You can test by accessing ``` http://127.0.0.1:8080/ ``` OR ``` http://your-system-IP:8080/ ```
 
