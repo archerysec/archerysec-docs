@@ -16,55 +16,43 @@ python --version
 pip --version
 # pip 9.0.1
 
-
-
 # Now clone Archery tool from github
-
 git clone https://github.com/archerysec/archerysec.git
 
-
 # Move to directory archerysec
-
-
 cd /archerysec
 
-
 # Install requirements
-
 pip install -r requirements.txt
 
-
 # Load static files
-
 python manage.py collectstatic
 
-
 # Makemigrations of all networkscanners app models
-
 python manage.py makemigrations networkscanners
 
 # Makemigrations of all webscanners app models
-
 python manage.py makemigrations webscanners
 
-
 # Makemigrations of all projects app models
-
 python manage.py makemigrations projects
 
+# Makemigration of API Scan
+python manage.py makemigrations APIScan
+
+# Makemigration of osintscan app
+python manage.py makemigrations osintscan
+
+# Makemigration of jiraticketing app
+python manage.py makemigrations jiraticketing
 
 # Migrate all data
-
 python manage.py migrate
 
-
 # Now you need to create application Credentials
-
 python manage.py createsuperuser
 
-
 # Let's run the application
-
-python manage.py runserver
+python manage.py runserver 127.0.0.1:8008
 ```
 
