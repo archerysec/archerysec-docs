@@ -68,3 +68,6 @@ defaults:
     values:
       _comments:
         type: Marks the impact of this release
+
+feed:
+  path: feed.xml
