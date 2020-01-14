@@ -5,54 +5,30 @@ chapter: 2
 order: 1
 ---
 
+####  ** **DO NOT EXPOSE PUBLICLY, INTERNAL USE ONLY** **
+<br/>
+Before installing Archery, you need to make sure you have python3, pip3 and virtualenv pre installed in your system.
 
-Before installing Archery, you need to make sure you have Python and `pip`
-– the Python package manager – up and running. You can verify if you're already
-good to go with the following commands:
+
+#### Restrict ArcherySec signup page on production.
+
+- Edit file `webscanners/web_views.py`
+- Search `def signup` function and comment `@public` decorator
+- Edit file `archeryapi/views.py`
+- Search def `class CreateUsers` and comment `@public` decorator
+- Edit file `archerysecurity/settings/base.py`
+- Search `STRONGHOLD_PUBLIC_URLS`
+- Comment `r'^/api/createuser/$',`
+
+
+Time Zone: [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 
 ``` bash
-python --version
-# Python 2.7.13
-pip --version
-# pip 9.0.1
+export TIME_ZONE='Asia/Kolkata'
 
-# Now clone Archery tool from github
-git clone https://github.com/archerysec/archerysec.git
-
-# Move to directory archerysec
-cd /archerysec
-
-# Install requirements
-pip install -r requirements.txt
-
-# Load static files
-python manage.py collectstatic
-
-# Makemigrations of all networkscanners app models
-python manage.py makemigrations networkscanners
-
-# Makemigrations of all webscanners app models
-python manage.py makemigrations webscanners
-
-# Makemigrations of all projects app models
-python manage.py makemigrations projects
-
-# Makemigration of API Scan
-python manage.py makemigrations APIScan
-
-# Makemigration of osintscan app
-python manage.py makemigrations osintscan
-
-# Makemigration of jiraticketing app
-python manage.py makemigrations jiraticketing
-
-# Migrate all data
-python manage.py migrate
-
-# Now you need to create application Credentials
-python manage.py createsuperuser
-
-# Let's run the application
-python manage.py runserver 127.0.0.1:8008
+$ git clone https://github.com/archerysec/archerysec.git
+$ cd archerysec
+$ ./setup.sh
+$ ./run.sh
 ```
 

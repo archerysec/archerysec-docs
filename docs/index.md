@@ -20,8 +20,10 @@ Archery is an opensource vulnerability assessment and management tool which help
 
 ## Requirements
 
-* Python 2.7
-* OpenVas 8
+* Python 3.6+ - [Python 3.6 Download](https://www.python.org/downloads/)
+* [OpenVAS 8, 9](http://www.openvas.org/index.html)
 * [OWASP ZAP 2.7.0](https://github.com/zaproxy/zaproxy/wiki/Downloads)
-* [Selenium Python Firefox Webdriver](https://github.com/mozilla/geckodriver/releases)
-
+* [Selenium Python Firefox Web driver](https://github.com/mozilla/geckodriver/releases)
+* [SSLScan](https://github.com/rbsec/sslscan)
+* [Nikto](https://cirt.net/Nikto2)
+* [NMAP Vulners](https://github.com/vulnersCom/nmap-vulners)
