@@ -9,18 +9,6 @@ order: 1
 <br/>
 Before installing Archery, you need to make sure you have python3, pip3 and virtualenv pre installed in your system.
 
-
-#### Restrict ArcherySec signup page on production.
-
-- Edit file `webscanners/web_views.py`
-- Search `def signup` function and comment `@public` decorator
-- Edit file `archeryapi/views.py`
-- Search def `class CreateUsers` and comment `@public` decorator
-- Edit file `archerysecurity/settings/base.py`
-- Search `STRONGHOLD_PUBLIC_URLS`
-- Comment `r'^/api/createuser/$',`
-
-
 Time Zone: [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 
 ``` bash
@@ -32,3 +20,12 @@ $ ./setup.sh
 $ ./run.sh
 ```
 
+### Restrict ArcherySec signup page on production.
+
+- Edit file `webscanners/web_views.py`
+- Search `def signup` function and comment `@public` decorator
+- Edit file `archeryapi/views.py`
+- Search def `class CreateUsers` and comment `@public` decorator
+- Edit file `archerysecurity/settings/base.py`
+- Search `STRONGHOLD_PUBLIC_URLS`
+- Comment `r'^/api/createuser/$',`
